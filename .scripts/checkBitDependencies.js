@@ -44,7 +44,7 @@ Promise.resolve({
     });
 
     // Let user select packages to add to bit.
-    inquirer
+    await inquirer
       .prompt([
         {
           type: 'checkbox',
