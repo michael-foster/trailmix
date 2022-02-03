@@ -1,0 +1,24 @@
+/**
+ * Outside: Guardian Egyptian
+ * https://www.outsideonline.com/wp-content/themes/outside-child/resources/assets/features/fonts/GuardianEgyp-Regular-Web.woff
+ */
+
+@font-face {
+  font-family: "Guardian Egyp";
+  src: url("./GuardianEgyp-Regular.woff") format("woff"),
+    url("./GuardianEgyp-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Guardian Egyp";
+  src: url("./GuardianEgyp-Semibold.woff") format("woff"),
+    url("./GuardianEgyp-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}

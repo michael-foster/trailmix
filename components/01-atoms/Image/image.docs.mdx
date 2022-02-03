@@ -1,0 +1,29 @@
+---
+description: 'Image'
+labels: ['Web', 'Image']
+---
+
+import { Image } from './image';
+
+## Image Component
+
+### Component usage
+
+```js
+import { Image } from './image';
+
+<Image
+  src="https://www.womensrunning.com/wp-content/uploads/2021/09/CortneyWhite-Shalane-Flanagan-Training_2.jpg?crop=16:9"
+  alt="runner"
+/>;
+```
+
+### Using props to customize the image
+
+```js live
+<Image
+  sizes="(max-width: 600px), (min-width: 601px)"
+  srcSet="https://www.womensrunning.com/wp-content/uploads/2021/09/CortneyWhite-Shalane-Flanagan-Training_2.jpg?crop=1:1, https://www.womensrunning.com/wp-content/uploads/2021/09/CortneyWhite-Shalane-Flanagan-Training_2.jpg?crop=16:9"
+  src="https://www.womensrunning.com/wp-content/uploads/2021/09/CortneyWhite-Shalane-Flanagan-Training_2.jpg?crop=1:1, https://www.womensrunning.com/wp-content/uploads/2021/09/CortneyWhite-Shalane-Flanagan-Training_2.jpg?crop=16:9"
+/>
+```

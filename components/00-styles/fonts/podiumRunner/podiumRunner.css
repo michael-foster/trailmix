@@ -1,0 +1,24 @@
+/**
+ * Podium Runner:
+ * font-1: modelica
+ */
+
+ @font-face {
+    font-family: "BW Modelica";
+    src: url("./BwModelicaSS02-Regular.woff") format("woff"),
+      url("./BwModelicaSS02-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+  }
+  
+  @font-face {
+    font-family: "BW Modelica";
+    src: url("BwModelicaSS02-Bold.woff") format("woff"),
+      url("./BwModelicaSS02-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+  }

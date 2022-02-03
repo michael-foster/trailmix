@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  #TRANSITIONS
+\*------------------------------------*/
+
+.u-transition--h {
+    max-height: 0;
+    transition: max-height 250ms ease-in-out;
+    overflow: hidden;
+  }
+  
+  .u-transition--h__active {
+    max-height: 1000px;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .u-transition--border {
+    transition: border 0.03s linear;
+    transition-delay: 300ms;
+    transition-property: border;
+  }
+  
+  .u-transition--border__active {
+    transition: border 0.001s linear;
+    border-width: 0;
+  }

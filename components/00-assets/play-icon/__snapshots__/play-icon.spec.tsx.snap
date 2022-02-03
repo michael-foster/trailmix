@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayIcon snapshot 1`] = `
+<DocumentFragment>
+  <svg
+    fill="none"
+    role="img"
+    viewBox="0 0 34 34"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M14 24L22 17L14 10L14 24Z"
+      fill="white"
+    />
+  </svg>
+</DocumentFragment>
+`;

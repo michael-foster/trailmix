@@ -1,0 +1,235 @@
+/*------------------------------------*\
+  #HEADERS
+ * Default styling for h1-h6 in addition 
+ * to header utility classes defined on theme
+\*------------------------------------*/
+
+/* Theme h1-h6  */
+
+.h1 {
+  /* Mobile */
+  @apply font-theme-headline-font  font-theme-weight-h-1 text-network-mobile-size-h-1 leading-network-mobile-height-h-1 tracking-network-mobile-tracking-h-1;
+}
+
+.h2 {
+  @apply font-theme-headline-font  font-theme-weight-h-2 text-network-mobile-size-h-2 leading-network-mobile-height-h-2 tracking-network-mobile-tracking-h-2;
+}
+
+.h3 {
+  @apply font-theme-headline-font  font-theme-weight-h-3 text-network-mobile-size-h-3 leading-network-mobile-height-h-3 tracking-network-mobile-tracking-h-3;
+}
+
+.h4 {
+  @apply font-theme-headline-font  font-theme-weight-h-4 text-network-mobile-size-h-4 leading-network-mobile-height-h-4 tracking-network-mobile-tracking-h-4;
+}
+
+.h5 {
+  @apply font-theme-headline-font  font-theme-weight-h-5 text-network-mobile-size-h-5 leading-network-mobile-height-h-5 tracking-network-mobile-tracking-h-5;
+}
+
+.h6 {
+  @apply font-theme-headline-font  font-theme-weight-h-6 text-network-mobile-size-h-6 leading-network-mobile-height-h-6 tracking-network-mobile-tracking-h-6;
+}
+
+/* Tablet */
+@screen narrow-x {
+  .h1 {
+    @apply text-network-tablet-size-h-1 leading-network-tablet-height-h-1 tracking-network-mobile-tracking-h-1;
+  }
+
+  .h2 {
+    @apply text-network-tablet-size-h-2 leading-network-tablet-height-h-2 tracking-network-mobile-tracking-h-2;
+  }
+
+  .h3 {
+    @apply text-network-tablet-size-h-3 leading-network-tablet-height-h-3 tracking-network-mobile-tracking-h-3;
+  }
+
+  .h4 {
+    @apply text-network-tablet-size-h-4 leading-network-tablet-height-h-4 tracking-network-mobile-tracking-h-4;
+  }
+
+  .h5 {
+    @apply text-network-tablet-size-h-5 leading-network-tablet-height-h-5 tracking-network-mobile-tracking-h-5;
+  }
+
+  .h6 {
+    @apply text-network-tablet-size-h-6 leading-network-tablet-height-h-6 tracking-network-mobile-tracking-h-6;
+  }
+}
+
+/* Desktop */
+@screen narrow {
+  .h1 {
+    @apply text-network-desktop-size-h-1 leading-network-desktop-height-h-1 tracking-network-desktop-tracking-h-1;
+  }
+
+  .h2 {
+    @apply text-network-desktop-size-h-2 leading-network-desktop-height-h-2 tracking-network-desktop-tracking-h-2;
+  }
+
+  .h3 {
+    @apply text-network-desktop-size-h-3 leading-network-desktop-height-h-3 tracking-network-desktop-tracking-h-3;
+  }
+
+  .h4 {
+    @apply text-network-desktop-size-h-4 leading-network-desktop-height-h-4 tracking-network-desktop-tracking-h-4;
+  }
+
+  .h5 {
+    @apply text-network-desktop-size-h-5 leading-network-desktop-height-h-5 tracking-network-desktop-tracking-h-5;
+  }
+
+  .h6 {
+    @apply text-network-desktop-size-h-6 leading-network-desktop-height-h-6 tracking-network-desktop-tracking-h-6;
+  }
+}
+
+/*------------------------------------*\
+  #SPECIAL HEADERS
+\*------------------------------------*/
+
+/* Special Headers: Theme */
+
+.u-text--heading-xl {
+  @apply font-theme-headline-xl-font font-theme-weight-xl text-network-mobile-size-xl leading-network-mobile-height-xl tracking-network-mobile-tracking-xl;
+}
+
+.u-text--heading-uppercase {
+  @apply font-theme-utility-text-uppercase-xl-font uppercase font-theme-weight-xl text-network-mobile-size-uppercase-xl leading-network-mobile-height-xl tracking-network-mobile-tracking-xl;
+}
+
+/*------------------------------------*\
+  #SPECIAL PSEUDO ELEMENTS
+\*------------------------------------*/
+
+.u-decoration--diagonal-strike::before {
+  content: '';
+  @apply absolute bg-network-outside-red -left-1 top-1/2;
+  height: 2px;
+  width: calc(100% + 4px);
+  -webkit-transform: rotate(155deg);
+  -o-transform: rotate(155deg);
+  transform: rotate(155deg);
+}
+
+/*------------------------------------*\
+  #UTILITY TEXT
+\*------------------------------------*/
+
+.u-text--uppercase-sm {
+  @apply uppercase font-theme-utility-text-font text-network-mobile-size-uppercase-small tracking-network-mobile-tracking-uppercase-small font-network-mobile-weight-uppercase-small;
+}
+
+.u-text--uppercase-lg {
+  @apply uppercase font-theme-utility-text-uppercase-xl-font text-network-mobile-size-uppercase-large tracking-network-mobile-tracking-uppercase-xl font-network-mobile-weight-uppercase-large;
+}
+
+.u-text--uppercase-xl {
+  @apply uppercase font-theme-utility-text-uppercase-xl-font text-network-mobile-size-uppercase-xl tracking-network-mobile-tracking-uppercase-xl font-network-mobile-weight-uppercase-xl;
+}
+
+.u-text--sm {
+  @apply font-theme-utility-text-font  text-12 tracking-network-mobile-tracking-small font-network-mobile-weight-small;
+}
+
+.u-text--lg {
+  @apply font-theme-utility-text-font  text-15 tracking-network-mobile-tracking-large font-network-mobile-weight-large;
+}
+
+/* Tablet + Up */
+@screen narrow-x {
+  .u-text--heading-xl {
+    @apply text-network-desktop-size-xl text-network-desktop-size-uppercase-xl tracking-network-tablet-tracking-xl;
+  }
+  .u-text--heading-uppercase {
+    @apply text-network-desktop-size-uppercase-xl text-network-desktop-size-uppercase-xl tracking-network-tablet-tracking-xl;
+  }
+  .u-text--uppercase-sm {
+    @apply text-network-desktop-size-uppercase-small tracking-network-desktop-tracking-uppercase-small font-network-desktop-weight-uppercase-small;
+  }
+  .u-text--uppercase-lg {
+    @apply text-network-desktop-size-uppercase-large tracking-network-desktop-tracking-uppercase-large font-network-desktop-weight-uppercase-large;
+  }
+  .u-text--uppercase-xl {
+    @apply text-network-desktop-size-uppercase-xl tracking-network-desktop-tracking-uppercase-xl font-network-desktop-weight-uppercase-xl;
+  }
+  .u-text--sm {
+    @apply text-13 font-network-desktop-weight-small;
+  }
+
+  .u-text--lg {
+    @apply text-16 font-network-desktop-weight-large;
+  }
+}
+
+/* Desktop */
+@screen narrow-x {
+  .u-text--heading-xl {
+    @apply text-network-desktop-size-xl;
+  }
+  .u-text--heading-uppercase {
+    @apply text-network-desktop-size-uppercase-xl;
+  }
+}
+
+/*------------------------------------*\
+  #COPY
+\*------------------------------------*/
+
+.u-text--copy {
+  @apply font-theme-article-copy-font   leading-tallest text-15 font-400;
+}
+
+.u-text--copy-sm {
+  @apply font-theme-article-copy-font   leading-tallest text-13 font-400;
+}
+
+.u-text--p-std {
+  @apply font-network-paragraph-copy-font   leading-tallest text-15 font-400;
+}
+
+.u-text--p-sm {
+  @apply font-network-paragraph-copy-font   leading-tallest text-13 font-400;
+}
+
+/* Tablet + Up */
+@screen narrow-x {
+  .u-text--copy {
+    @apply text-16;
+  }
+
+  .u-text--copy-sm {
+    @apply text-14;
+  }
+  .u-text--p-std {
+    @apply text-16;
+  }
+
+  .u-text--p-sm {
+    @apply text-14;
+  }
+}
+
+/* Network trigger word, for copy (e.g. paragraph or ul li or h1, etc. in a modal) to override underlying theme - maybe we 
+ * want to consider using the prose plugin ...  */
+
+.network p,
+.network h1,
+.network h2,
+.network h3,
+.network h4,
+.network h5,
+.network h6,
+.network ul li,
+.network ol li {
+  @apply font-network-paragraph-copy-font;
+}
+
+/*------------------------------------*\
+  #LINK STYLES
+\*------------------------------------*/
+
+.u-link--brick a {
+  @apply text-network-brick underline;
+}

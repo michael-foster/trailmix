@@ -1,0 +1,65 @@
+---
+description: 'BrandLogos provides the logo (with alt text) and a link for each brand. Each brand is also categorized.'
+labels: ['brands', 'logos', 'images', 'links', 'config']
+---
+
+import { BRAND_LOGOS, BRAND_LOGOS_LIST } from './brand-logos';
+import { Image } from '@outside-interactive/web-microfrontends.01-atoms.image'
+
+## Import
+
+```js
+    import { BRAND_LOGOS, BRAND_LOGOS_LIST } from './brand-logos';
+```
+
+This component is static (has no props) and provides an enum type, an object (BRAND_LOGOS), and an array (BRAND_LOGOS_LIST, via Object.values()) for access to the brand logos with alt text and a link to the brand's site. Each brand is categorized. Each item in the brand logos object/array contains the following:
+- id: numerical identifier
+- brand: key from enum
+- brandLabel: brand name in human readable format
+- link: URL for brand website
+- image: URL for logo image in SVG
+- alt: alt text for the logo image
+- category: category for the brand (used by the footer)
+
+For example: 
+```
+{
+    YOGA_JOURNAL: {
+        id: 1,
+        brand: 'YOGA_JOURNAL',
+        brandLabel: 'Yoga Journal',
+        link: 'https://www.yogajournal.com',
+        image: 'https://outsideonline-files.s3.us-west-2.amazonaws.com/logos/svg/yogajournal.svg',
+        alt: 'Yoga Journal logo',
+        category: 'healthy-living'
+    },
+    OXYGEN_MAG: {
+        id: 2,
+        brand: 'OXYGEN_MAG',
+        brandLabel: 'Oxygen Magazine',
+        link: 'http://www.oxygenmag.com/',
+        image: 'https://outsideonline-files.s3.us-west-2.amazonaws.com/logos/svg/oxygen.svg',
+        alt: 'Oxygen Mag logo',
+        category: 'healthy-living'
+    },
+    ...
+}
+```
+
+## Component Usage
+
+```js live
+    <ul className="bg-network-black">
+        {BRAND_LOGOS_LIST.map(brand => 
+            <li className="text-network-white py-4 list-none">{brand.brand}: 
+                <a href={brand.link}>
+                    <Image src={brand.image} alt={brand.alt} shouldLazyLoad />
+                </a>
+            </li>
+        )}
+    </ul>
+```
+
+## Properties
+
+No properties

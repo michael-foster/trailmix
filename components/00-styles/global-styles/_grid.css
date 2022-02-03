@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  #GRID
+\*------------------------------------*/
+
+/* This is a grid with 12 cols > tablet, 1 col <= tablet, grid gap of 28px (7*4) */
+.u-grid--std-12 {
+    @apply grid grid-cols-1 narrow-x:grid-cols-12 narrow-x:gap-7;
+  }
+
+
+/* Used for film posters in Watch */
+.u-grid--films {
+  @apply grid grid-cols-2 narrow-x:grid-cols-12 gap-x-6 narrow-x:gap-x-7 gap-y-10 narrow-x:gap-y-12;
+}

@@ -1,0 +1,43 @@
+.outside-loader span {
+  @apply inline-block rounded rounded-full my-auto mx-1;
+  width: 14px;
+  height: 14px;
+}
+
+.outside-loader .default-background {
+  background-color: #3498db;
+}
+
+.outside-loader .white-background {
+  background-color: #fff;
+}
+
+.outside-loader span:nth-child(1) {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.outside-loader span:nth-child(2) {
+  animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+.outside-loader span:nth-child(3) {
+  animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  75%,
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}

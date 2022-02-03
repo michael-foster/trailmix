@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  #RICH TEXT 
+  * Format rich text coming out of WordPress
+\*------------------------------------*/
+
+.o-rich-text > dl dd,
+.o-rich-text > dl dt,
+.o-rich-text > ol li,
+.o-rich-text > ul li,
+.o-rich-text > p,
+.o-rich-text > blockquote {
+  @apply font-theme-article-copy-font font-theme-weight-standard leading-theme-height-standard text-network-black;
+}
+
+/* Lists */
+.o-rich-text > ul {
+  @apply ml-10 list-disc;
+}
+
+.o-rich-text > ul li {
+  @apply list-outside;
+}
+
+.o-rich-text > ol {
+  @apply ml-10 list-decimal;
+}
+
+.o-rich-text > ol {
+  @apply list-outside; 
+}
+.o-rich-text > ol li {
+  @apply list-outside mt-2;
+}
+
+/* Spacing Between Elements */
+.o-rich-text > * + * {
+  @apply mt-7;
+}
+
+/* Tables */
+.o-rich-text table {
+    @apply table-auto;
+}
+
+.o-rich-text table th {
+    @apply px-4 py-2;
+}
+
+.o-rich-text table th h3 {
+    @apply text-18;
+}
+
+.o-rich-text table td {
+    @apply border border-network-grey-light px-4 py-2 ;
+}

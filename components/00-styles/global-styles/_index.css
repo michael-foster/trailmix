@@ -1,0 +1,211 @@
+/**
+ * CONTENTS
+ *
+ * TAILWIND
+ * base...............Tailwind base config.
+ * components.........Tailwind component config.
+ * utilities..........Taliwind utilities config.
+ *
+ * TEST CLASS
+ * _test.css..........Used to test if tailwind and global styles have been imported properly.
+ * Note: files should be wrapped in @layer components {} to purge properly.
+ */
+
+/*------------------------------------*\
+  #TAILWIND
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #BASE 
+\*------------------------------------*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
+
+@import url('https://use.typekit.net/ylx3kgm.css'); /* Network */
+
+@layer components {
+  /*------------------------------------*\
+  #TEST CLASS
+\*------------------------------------*/
+
+  @import './_test.css';
+
+  /*------------------------------------*\
+  #Layout
+\*------------------------------------*/
+
+  @import './_layout.css';
+
+  /*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+  @import './_buttons.css';
+
+  /*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+
+  @import './_typography.css';
+
+  /*------------------------------------*\
+  #RICH TEXT
+\*------------------------------------*/
+
+  @import url('./_rich-text.css');
+}
+
+ /*------------------------------------*\
+  #GRID
+\*------------------------------------*/
+
+@import './_grid.css';
+
+ /*------------------------------------*\
+  #TRANSITIONS
+\*------------------------------------*/
+
+@import './_transitions.css';
+
+  /*------------------------------------*\
+  #ICONS
+\*------------------------------------*/
+
+@import url('./_icon.css');
+
+  /*------------------------------------*\
+  #LOADER
+\*------------------------------------*/
+
+@import url('./_loader.css');
+/*------------------------------------*\
+  #BASE STYLES FOR HTML ELEMENTS
+  * 
+  * This is here because 
+  * @layer base {@import './_base.css';}
+  * would not work. So it's at bottom. 
+  * 
+\*------------------------------------*/
+
+@layer base {
+  /* Theme h1-h6  */
+
+  h1 {
+    /* Mobile */
+    @apply font-theme-headline-font  font-theme-weight-h-1 text-network-mobile-size-h-1 leading-network-mobile-height-h-1 tracking-network-mobile-tracking-h-1;
+  }
+
+  h2 {
+    @apply font-theme-headline-font  font-theme-weight-h-2 text-network-mobile-size-h-2 leading-network-mobile-height-h-2 tracking-network-mobile-tracking-h-2;
+  }
+
+  h3 {
+    @apply font-theme-headline-font  font-theme-weight-h-3 text-network-mobile-size-h-3 leading-network-mobile-height-h-3 tracking-network-mobile-tracking-h-3;
+  }
+
+  h4 {
+    @apply font-theme-headline-font  font-theme-weight-h-4 text-network-mobile-size-h-4 leading-network-mobile-height-h-4 tracking-network-mobile-tracking-h-4;
+  }
+
+  h5 {
+    @apply font-theme-headline-font  font-theme-weight-h-5 text-network-mobile-size-h-5 leading-network-mobile-height-h-5 tracking-network-mobile-tracking-h-5;
+  }
+
+  h6 {
+    @apply font-theme-headline-font  font-theme-weight-h-6 text-network-mobile-size-h-6 leading-network-mobile-height-h-6 tracking-network-mobile-tracking-h-6;
+  }
+
+  /* Tablet */
+  @screen narrow-x {
+    h1 {
+      @apply text-network-tablet-size-h-1 leading-network-tablet-height-h-1 tracking-network-mobile-tracking-h-1;
+    }
+
+    h2 {
+      @apply text-network-tablet-size-h-2 leading-network-tablet-height-h-2 tracking-network-mobile-tracking-h-2;
+    }
+
+    h3 {
+      @apply text-network-tablet-size-h-3 leading-network-tablet-height-h-3 tracking-network-mobile-tracking-h-3;
+    }
+
+    h4 {
+      @apply text-network-tablet-size-h-4 leading-network-tablet-height-h-4 tracking-network-mobile-tracking-h-4;
+    }
+
+    h5 {
+      @apply text-network-tablet-size-h-5 leading-network-tablet-height-h-5 tracking-network-mobile-tracking-h-5;
+    }
+
+    h6 {
+      @apply text-network-tablet-size-h-6 leading-network-tablet-height-h-6 tracking-network-mobile-tracking-h-6;
+    }
+  }
+
+  /* Desktop */
+  @screen narrow {
+    h1 {
+      @apply text-network-desktop-size-h-1 leading-network-desktop-height-h-1 tracking-network-desktop-tracking-h-1;
+    }
+
+    h2 {
+      @apply text-network-desktop-size-h-2 leading-network-desktop-height-h-2 tracking-network-desktop-tracking-h-2;
+    }
+
+    h3 {
+      @apply text-network-desktop-size-h-3 leading-network-desktop-height-h-3 tracking-network-desktop-tracking-h-3;
+    }
+
+    h4 {
+      @apply text-network-desktop-size-h-4 leading-network-desktop-height-h-4 tracking-network-desktop-tracking-h-4;
+    }
+
+    h5 {
+      @apply text-network-desktop-size-h-5 leading-network-desktop-height-h-5 tracking-network-desktop-tracking-h-5;
+    }
+
+    h6 {
+      @apply text-network-desktop-size-h-6 leading-network-desktop-height-h-6 tracking-network-desktop-tracking-h-6;
+    }
+  }
+
+  /*------------------------------------*\
+  #COPY
+\*------------------------------------*/
+
+  p,
+  ul li,
+  ol li {
+    @apply font-theme-article-copy-font  leading-tallest text-15;
+  }
+
+
+  /* Tablet + Up */
+  @screen narrow-x {
+    p,
+    ul li,
+    ol li {
+      @apply text-16;
+    }
+  }
+
+  /*------------------------------------*\
+  #LISTS
+\*------------------------------------*/
+  ul li {
+    @apply list-disc list-inside;
+  }
+
+  /*------------------------------------*\
+  #ANCHOR
+\*------------------------------------*/
+  a {
+    @apply cursor-pointer;
+  }
+}

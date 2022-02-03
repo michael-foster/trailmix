@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image multi-source snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <picture
+      data-testid="lazy-loaded-picture"
+    >
+      <source
+        media="(max-width: 300px)"
+        srcset="http://www.outside.com/canoe-small.jpg"
+      />
+      <source
+        media="(max-width: 600px)"
+        srcset="http://www.outside.com/canoe-large.jpg"
+      />
+      <source
+        media="(max-width: 900px)"
+        srcset="http://www.outside.com/canoe-large.jpg"
+      />
+      <img
+        alt="runner"
+        class="cool neat wow min-w-full"
+        loading="lazy"
+        src="https://www.womensrunning.com/runner.jpg"
+        style="height: auto; width: auto;"
+      />
+    </picture>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Image optional full width snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="runner"
+      class="cool neat wow"
+      data-testid="lazy-loaded-picture"
+      loading="lazy"
+      src="https://www.womensrunning.com/runner.jpg"
+      srcset=""
+      style="height: auto; width: auto;"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Image single source snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="runner"
+      class="cool neat wow min-w-full"
+      data-testid="lazy-loaded-picture"
+      loading="lazy"
+      src="https://www.womensrunning.com/runner.jpg"
+      srcset=""
+      style="height: auto; width: auto;"
+    />
+  </div>
+</DocumentFragment>
+`;
