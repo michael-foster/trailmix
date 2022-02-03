@@ -1749,20 +1749,10 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@outside-interactive/style-dictionaries.js-tokens@0.0.13", "@outside-interactive/style-dictionaries.js-tokens@^0.0.13":
+"@outside-interactive/style-dictionaries.js-tokens@^0.0.13":
   version "0.0.13"
   resolved "https://node.bit.dev/@outside-interactive/style-dictionaries.js-tokens/-/@outside-interactive-style-dictionaries.js-tokens-0.0.13.tgz#23c3950090d11f15e10c34d31de8344ae36350c8"
   integrity sha1-I8OVAJDRHxXhDDTTHeg0SuNjUMg=
-
-"@outside-interactive/web-microfrontends.styles.tailwind-config@^1.4.1":
-  version "1.4.1"
-  resolved "https://node.bit.dev/@outside-interactive/web-microfrontends.styles.tailwind-config/-/@outside-interactive-web-microfrontends.styles.tailwind-config-1.4.1.tgz#65adc194687a28cd2545bc16bd72af1665e21e02"
-  integrity sha1-Za3BlGh6KM0lRbwWvXKvFmXiHgI=
-  dependencies:
-    "@outside-interactive/style-dictionaries.js-tokens" "0.0.13"
-    "@tailwindcss/aspect-ratio" "0.3.0"
-    "@tailwindcss/line-clamp" "0.2.2"
-    lodash.kebabcase "4.1.1"
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.1":
   version "0.5.4"
@@ -2645,15 +2635,15 @@
     resolve-from "^5.0.0"
     store2 "^2.12.0"
 
-"@tailwindcss/aspect-ratio@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/aspect-ratio/-/aspect-ratio-0.3.0.tgz#f779ab3f07cac848fb844122d6662ba6560010b8"
-  integrity sha512-DMgWskNJR6FNPLbQ8Xoq/PKV/9DfNKh5dvKB+SM8x7lVl4+pnxlZ3Ns4+yGmurA/ze708HrnCG1tXk85HolJmw==
+"@tailwindcss/aspect-ratio@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/aspect-ratio/-/aspect-ratio-0.4.0.tgz#c635dd7331cbcc1b111cebdc2647dd3493ebdd3e"
+  integrity sha512-WJu0I4PpqNPuutpaA9zDUq2JXR+lorZ7PbLcKNLmb6GL9/HLfC7w3CRsMhJF4BbYd/lkY6CfXOvkYpuGnZfkpQ==
 
-"@tailwindcss/line-clamp@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.2.2.tgz#05843c004bf069353a0c43f9df8cc3a6016252b8"
-  integrity sha512-NgA4Ds+/eCiO+6O3SooRsfJ8m7M2+QvNvHwOjBQq7FIYoWwAV4I4Wu4fjHeuO9Yi6p47ceHUKEGGEBh0ozQodg==
+"@tailwindcss/line-clamp@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.3.1.tgz#4d8441b509b87ece84e94f28a4aa9998413ab849"
+  integrity sha512-pNr0T8LAc3TUx/gxCfQZRe9NB2dPEo/cedPHzUGIPxqDMhgjwNm6jYxww4W5l0zAsAddxr+XfZcqttGiFDgrGg==
 
 "@tailwindcss/postcss7-compat@npm:@tailwindcss/postcss7-compat", "tailwindcss@npm:@tailwindcss/postcss7-compat":
   version "2.2.17"
@@ -8183,7 +8173,7 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
-lodash.kebabcase@4.1.1, lodash.kebabcase@^4.1.1:
+lodash.kebabcase@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
   integrity sha1-hImxyw0p/4gZXM7KRI/21swpXDY=
