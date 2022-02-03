@@ -5,10 +5,34 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@charlietango/use-native-lazy-loading@npm:1.9.0":
+  version: 1.9.0
+  resolution: "@charlietango/use-native-lazy-loading@npm:1.9.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40charlietango%2Fuse-native-lazy-loading%2F-%2Fuse-native-lazy-loading-1.9.0.tgz"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 8aa167ec1cdbee7fef66ca22c4fa36c30eb2486ada1c509989ae9742d5f955337d65ac983fe44d46809fa6578cebbb44e5e43e91b6d8d128f44d5e5ed8a33eb5
+  languageName: node
+  linkType: hard
+
+"@outside-interactive/style-dictionaries.js-tokens@npm:0.0.13":
+  version: 0.0.13
+  resolution: "@outside-interactive/style-dictionaries.js-tokens@npm:0.0.13::__archiveUrl=https%3A%2F%2Fnode.bit.dev%2F%40outside-interactive%2Fstyle-dictionaries.js-tokens%2F-%2F%40outside-interactive-style-dictionaries.js-tokens-0.0.13.tgz"
+  checksum: dad868bb4a139fa9ddf1ae228b9abf08e895a5f5ac03153657d0bafaa6116fc03750d31ee9dd6c1c8e6bed18629ff693b855f0fda75222cfac3368fa8bf85fc5
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fjs-tokens%2F-%2Fjs-tokens-4.0.0.tgz"
   checksum: 8a95213a5a77deb6cbe94d86340e8d9ace2b93bc367790b260101d2f36a2eaf4e4e22d9fa9cf459b38af3a32fb4190e638024cf82ec95ef708680e405ea7cc78
+  languageName: node
+  linkType: hard
+
+"lodash.kebabcase@npm:4.1.1":
+  version: 4.1.1
+  resolution: "lodash.kebabcase@npm:4.1.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Flodash.kebabcase%2F-%2Flodash.kebabcase-4.1.1.tgz"
+  checksum: 5a6c59161914e1bae23438a298c7433e83d935e0f59853fa862e691164696bc07f6dfa4c313d499fbf41ba8d53314e9850416502376705a357d24ee6ca33af78
   languageName: node
   linkType: hard
 
@@ -43,6 +67,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-intersection-observer@npm:8.33.1":
+  version: 8.33.1
+  resolution: "react-intersection-observer@npm:8.33.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-intersection-observer%2F-%2Freact-intersection-observer-8.33.1.tgz"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
+  checksum: 5feb0df01dd64f1fa0b8300fb4fc12db95350c1ae2514f66f0652371f65e5501758a662746000dc2584d24dcce07139590e5375d6c9920a60b282af83468d0c4
+  languageName: node
+  linkType: hard
+
 "react@npm:17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact%2F-%2Freact-17.0.2.tgz"
@@ -57,8 +90,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@charlietango/use-native-lazy-loading": 1.9.0
+    "@outside-interactive/style-dictionaries.js-tokens": 0.0.13
+    lodash.kebabcase: 4.1.1
     react: 17.0.2
     react-dom: 17.0.2
+    react-intersection-observer: 8.33.1
   peerDependencies:
     react: 17.0.2
     react-dom: 17.0.2
